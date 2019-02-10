@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonFade : MonoBehaviour
+public class ButtonFadeOut : MonoBehaviour
 {
     private Animator animator;
     private bool isClicked;
+    public string animations;
 
     // Start is called before the first frame update
     void Start()
@@ -15,16 +16,12 @@ public class ButtonFade : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        animator.Play(animations);
     }
 
     public void ShowProductInfo()
     {
-        if (isClicked)
-        {
-            animator.Play("ShowProduct");
-        }
+        animator.Play(animations);
     }
 }
