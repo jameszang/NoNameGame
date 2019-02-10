@@ -31,4 +31,18 @@ public class Fridge : MonoBehaviour {
         }
         isInside = !isInside;
     }
+
+    public void FridgeSlideUp()
+    {
+        if (isInside)
+        {
+            //FridgeSlideLeft
+            animator.Play("FridgeSlideDown");
+        }
+        else
+        {
+            animator.Play("FridgeSlideUp");
+        }
+        isInside = !isInside;
+    }
 }
