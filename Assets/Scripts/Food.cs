@@ -34,21 +34,21 @@ public class Food
     
 
     // identifiers
-    private string ndbno;
-    private string name;
-    private int price;
+    public string ndbno;
+    public string name;
+    public int price;
 
     // nutrients
-    private float carbs;
-    private float fat;
-    private float protein;
-    private float fiber;
-    private float electrolytes;
-    private float riboflavin;
-    private float vitaminD;
-    private float vitaminC;
-    private float iron;
-    private float calories;
+    public float carbs;
+    public float fat;
+    public float protein;
+    public float fiber;
+    public float electrolytes;
+    public float riboflavin;
+    public float vitaminD;
+    public float vitaminC;
+    public float iron;
+    public float calories;
    
     
     public Food(string ndbno) {
@@ -97,4 +97,8 @@ public class Food
         return foods;
     }
 
+    public Food getFood (string ndbno)
+    {
+        return ALLFOODS[ndbno];
+    }
 }

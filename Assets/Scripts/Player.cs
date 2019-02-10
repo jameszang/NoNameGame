@@ -13,6 +13,46 @@ public class Player : MonoBehaviour {
     private Stat stamina;
     private int money;
 
+    //inventory
+    private Dictionary<string, Food> Inventory;
+    private int InventoryLimit = 6; 
+
+    public void addToInventory(string ndbno)
+    {
+        if (Inventory.Count < InventoryLimit)
+        {
+            Inventory[ndbno] = Food.ALLFOODS[ndbno];
+        } 
+        
+    }
+
+    public void takeFromInventory(string ndbno)
+    {
+        if (satiation.getCurr() >= satiation.getAbsMax())
+        {
+            return;
+        }
+        if (Inventory.Remove(ndbno))
+        {
+            Food food = Food.ALLFOODS[ndbno];
+            eat(food);
+        }
+    }
+
+    private void eat(Food food)
+    {
+        carbs.add(food.carbs);
+        fat.add(food.fat);
+        protein.add(food.protein);
+        fiber.add(food.fiber);
+        electrolytes.add(food.electrolytes);
+        riboflavin.add(food.riboflavin);
+        vitaminD.add(food.vitaminD);
+        vitaminC.add(food.vitaminC);
+        iron.add(food.iron);
+        calories.add(food.calories);
+    }
+
     // detailed stats
     private Stat carbs;
     private Stat fat;
@@ -48,7 +88,7 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        //this.calories.add(5);
+        this.calories.add(5);
     }
 
     public Stat getStatByName(string name) {
