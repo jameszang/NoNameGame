@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class ActivitiesScript : MonoBehaviour {
@@ -17,6 +18,7 @@ public class ActivitiesScript : MonoBehaviour {
         }
         SceneManager.MoveGameObjectToScene(FindObjectOfType<Player>().gameObject, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<Canvas>().gameObject, SceneManager.GetSceneByName(scene));
+        SceneManager.MoveGameObjectToScene(FindObjectOfType<EventSystem>().gameObject, SceneManager.GetSceneByName(scene));
         SceneManager.UnloadSceneAsync(currentScene);
     }
 
