@@ -11,20 +11,19 @@ public class Textbox : MonoBehaviour
     {
         display = false;
         textbox.SetActive(false);
+        
+    }
 
-        if (Input.GetKey("d"))
-        {
-            if (display == true)
-            {
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.D)) {
+            Debug.Log("D was pressed");
+            if (display == true) {
                 textbox.SetActive(false);
                 display = false;
-            }
-            else
-            {
+            } else {
                 display = true;
                 textbox.SetActive(true);
-
             }
         }
-    }  
+    }
 }
