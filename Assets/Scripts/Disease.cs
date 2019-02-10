@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Disease : MonoBehaviour
+public class Disease
 {
     private string name;
 

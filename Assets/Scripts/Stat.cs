@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Tracks a particular metric
-public class Stat : MonoBehaviour
+public class Stat
 {
     // name of the stat e.g. "iron"
     private string name;
@@ -31,9 +31,24 @@ public class Stat : MonoBehaviour
 
     public void add(float val) {
         this.curr += val;
+        if (this.curr >= absMax) {
+            this.curr = absMax;
+        }
     }
 
     public bool isHealthy() {
         return curr >= healthyMin && curr <= healthyMax;
+    }
+
+    public float getAbsMin() {
+        return absMin;
+    }
+
+    public float getAbsMax() {
+        return absMax;
+    }
+
+    public float getCurr() {
+        return curr;
     }
 }

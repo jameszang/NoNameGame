@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    // public instance variables
+    // instance variables
     public int spd;
 
-    // private instance variables
     // major stats
     private Stat health;
     private Stat satiation;
@@ -27,7 +26,7 @@ public class Player : MonoBehaviour {
     private Stat calories;
 
     // Start is called before the first frame update
-    void Start() {
+    void Awake() {
         this.health = new Stat("health", 0, 100, 30, 100);
         this.satiation = new Stat("satiation", 0, 100, 30, 70);
         this.stamina = new Stat("stamina", 0, 100, 0, 100);
@@ -47,6 +46,37 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        this.calories.add(5);
+    }
+
+    public Stat getStatByName(string name) {
+        switch (name) {
+            case "health":
+                return health;
+            case "satiation":
+                return satiation;
+            case "stamina":
+                return stamina;
+            case "carbs":
+                return carbs;
+            case "fat":
+                return fat;
+            case "protein":
+                return protein;
+            case "fiber":
+                return fiber;
+            case "electrolytes":
+                return electrolytes;
+            case "riboflavin":
+                return riboflavin;
+            case "vitaminD":
+                return vitaminD;
+            case "vitaminC":
+                return vitaminC;
+            case "iron":
+                return iron;
+            default:
+                return calories;
+        }
     }
 }
