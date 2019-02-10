@@ -26,7 +26,7 @@ public class Player : MonoBehaviour {
     private Stat calories;
 
     // Start is called before the first frame update
-    void Start() {
+    void Awake() {
         this.health = new Stat("health", 0, 100, 30, 100);
         this.satiation = new Stat("satiation", 0, 100, 30, 70);
         this.stamina = new Stat("stamina", 0, 100, 0, 100);
