@@ -48,7 +48,7 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        this.calories.add(5);
+        //this.calories.add(5);
     }
 
     public Stat getStatByName(string name) {
