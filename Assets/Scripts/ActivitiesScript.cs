@@ -10,13 +10,10 @@ public class ActivitiesScript : MonoBehaviour {
         SceneManager.LoadScene(scene);
     }
 
-    public void SlideOut(List<GameObject> Activities)
-    { 
-
-        foreach (GameObject gameObject in Activities)
-        {
-            gameObject.transform.Translate(Vector3.right * 800);
-        }
+    //Logic for moving activities menu out of the way
+    public void SlideOut(GameObject Activity)
+    {
+            Activity.transform.Translate(Vector3.right * 800);
         
     }
 }
