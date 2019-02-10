@@ -1,1 +1,1 @@
-01264|Ice cream bar, stick or nugget, with crunch coating|37.12|25.26|2.11|1.1|218|0.069|3|0.0|0.00|358
+01264|Ice cream bar, stick or nugget, with crunch coating|37.12|25.26|2.11|1.1|218|0.069|3|0.0|0.00|358|2

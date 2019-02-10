@@ -31,10 +31,12 @@ public class Food
     };
 
     public static Dictionary<string, Food> ALLFOODS;
+    
 
     // identifiers
     private string ndbno;
     private string name;
+    private int price;
 
     // nutrients
     private float carbs;
@@ -47,6 +49,7 @@ public class Food
     private float vitaminC;
     private float iron;
     private float calories;
+   
     
     public Food(string ndbno) {
         string text = System.IO.File.ReadAllText("Assets/Data/" + ndbno + ".txt");
@@ -64,6 +67,7 @@ public class Food
         float.TryParse(foodData[9], out this.vitaminC);
         float.TryParse(foodData[10], out this.iron);
         float.TryParse(foodData[11], out this.calories);
+        int.TryParse(foodData[12], out this.price); 
     }
 
     // Generates a map of ndbno:Food
@@ -92,4 +96,5 @@ public class Food
 
         return foods;
     }
+
 }

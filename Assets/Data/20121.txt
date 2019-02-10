@@ -1,1 +1,1 @@
-20121|Pasta, cooked, enriched, without added salt|30.86|0.93|5.80|1.8|52|0.136|0|0.0|1.28|158
+20121|Pasta, cooked, enriched, without added salt|30.86|0.93|5.80|1.8|52|0.136|0|0.0|1.28|158|1

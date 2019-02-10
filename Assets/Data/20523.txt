@@ -1,1 +1,1 @@
-20523|Spaghetti, protein-fortified, cooked, enriched (n x 6.25)|30.88|0.21|8.86|2.0|57|0.161|0|0.0|0.72|164
+20523|Spaghetti, protein-fortified, cooked, enriched (n x 6.25)|30.88|0.21|8.86|2.0|57|0.161|0|0.0|0.72|164|1

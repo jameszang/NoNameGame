@@ -1,1 +1,1 @@
-19412|Snacks, potato chips, made from dried potatoes, cheese-flavor|50.60|37.00|7.00|3.4|1091|0.120|0|8.5|1.60|551
+19412|Snacks, potato chips, made from dried potatoes, cheese-flavor|50.60|37.00|7.00|3.4|1091|0.120|0|8.5|1.60|551|2

@@ -1,1 +1,1 @@
-10984|Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled|0.89|6.74|26.14|0.0|495|0.256|26|0.0|0.92|169
+10984|Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled|0.89|6.74|26.14|0.0|495|0.256|26|0.0|0.92|169|2

@@ -1,1 +1,1 @@
-01223|Protein supplement, milk based, Muscle Milk, powder|18.50|17.14|45.71|7.1|1958|0.857|200|30.0|8.57|411
+01223|Protein supplement, milk based, Muscle Milk, powder|18.50|17.14|45.71|7.1|1958|0.857|200|30.0|8.57|411|1
