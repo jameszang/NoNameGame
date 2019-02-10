@@ -21,7 +21,7 @@ public class MeatHandler : MonoBehaviour
         } else {
             Debug.Log("eaten");
             player.takeFromInventory(ndbno);
-            Debug.Log(player.getStatByName("calories").getCurr());
+            GameObject.Destroy(gameObject);
         }
     }
 }
