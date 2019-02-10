@@ -3,8 +3,9 @@ guid: dfe7eab54ae0be842adfd249ed6a37ae
 TextureImporter:
   fileIDToRecycleName:
     21300000: stats_base
+    21300002: Stats base_button
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -111,6 +112,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3b3e15334399a45f08e95075917889fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stats base_button
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 1862
+        width: 256
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c40e90e343d53540bcf6e1215767a3e
       vertices: []
       indices: 
       edges: []
