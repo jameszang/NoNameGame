@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class ActivitiesScript : MonoBehaviour {
 
     public void ChangeScene(string scene) {
-        StartCoroutine(loadYourSceneAsync(scene));
+        if (SceneManager.GetActiveScene().name != scene) {
+            StartCoroutine(loadYourSceneAsync(scene));
+        }
     }
 
     IEnumerator loadYourSceneAsync(string scene) {
