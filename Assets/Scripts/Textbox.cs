@@ -10,21 +10,21 @@ public class Textbox : MonoBehaviour
     void Start()
     {
         display = false;
-        textbox.SetActive(false); 
-    }
+        textbox.SetActive(false);
 
- 
-    public void ToggleTextbox()
-    {
-        if (display == false)
+        if (Input.GetKey("d"))
         {
-            textbox.SetActive(true);
-            display = true; 
+            if (display == true)
+            {
+                textbox.SetActive(false);
+                display = false;
+            }
+            else
+            {
+                display = true;
+                textbox.SetActive(true);
+
+            }
         }
-        else  {
-            textbox.SetActive(false);
-            display = false; 
-        }
-        
-    }
+    }  
 }
