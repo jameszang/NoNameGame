@@ -96,11 +96,11 @@ public class Player : MonoBehaviour {
     }
 
     private void Start() {
-        addToInventory("19040");
-        addToInventory("19040");
-        addToInventory("19040");
-        addToInventory("19040");
-        addToInventory("19040");
+        addToInventory("13849");
+        addToInventory("13849");
+        addToInventory("13849");
+        addToInventory("13849");
+        addToInventory("13849");
     }
 
     // Update is called once per frame
