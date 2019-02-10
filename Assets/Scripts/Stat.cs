@@ -26,7 +26,7 @@ public class Stat
         this.absMax = absMax;
         this.healthyMin = healthyMin;
         this.healthyMax = healthyMax;
-        if (name == "health" || name == "stamina" || name == "satiation") {
+        if (name == "health" || name == "stamina") {
             this.curr = absMax;
         } else {
             this.curr = absMin;

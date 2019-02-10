@@ -13,15 +13,21 @@ public class Player : MonoBehaviour {
     private Stat stamina;
     private int money;
 
-    //inventory
-    private Dictionary<string, Food> Inventory;
-    private int InventoryLimit = 6; 
+    //inventory is a map of ndbno:num of that food
+    private Dictionary<string, int> Inventory;
+    private int InventoryLimit = 6;
+    private int numItemsInInventory = 0;
 
     public void addToInventory(string ndbno)
     {
-        if (Inventory.Count < InventoryLimit)
+        if (numItemsInInventory < InventoryLimit)
         {
-            Inventory[ndbno] = Food.ALLFOODS[ndbno];
+            if (Inventory.ContainsKey(ndbno)) {
+                Inventory[ndbno]++;
+            } else {
+                Inventory[ndbno] = 1;
+            }
+            numItemsInInventory++;
         } 
         
     }
@@ -32,10 +38,11 @@ public class Player : MonoBehaviour {
         {
             return;
         }
-        if (Inventory.Remove(ndbno))
+        if (Inventory.ContainsKey(ndbno) && Inventory[ndbno] > 0)
         {
             Food food = Food.ALLFOODS[ndbno];
             eat(food);
+            Inventory[ndbno]--;
         }
     }
 
@@ -83,12 +90,22 @@ public class Player : MonoBehaviour {
         this.iron = new Stat("iron", 0, 70, 8, 45); // mg
         this.calories = new Stat("calories", 0, 4000, 1500, 2500); // calories
 
+        this.Inventory = new Dictionary<string, int>();
+
         Food.GenerateAllFoods(); // could be moved if necessary/appropriate
+    }
+
+    private void Start() {
+        addToInventory("19040");
+        addToInventory("19040");
+        addToInventory("19040");
+        addToInventory("19040");
+        addToInventory("19040");
     }
 
     // Update is called once per frame
     void Update() {
-        this.calories.add(5);
+        //this.calories.add(5);
     }
 
     public Stat getStatByName(string name) {
