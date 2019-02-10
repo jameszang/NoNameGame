@@ -42,6 +42,8 @@ public class Player : MonoBehaviour {
         this.vitaminC = new Stat("vitaminC", 0, 3000, 75, 2000); // mg
         this.iron = new Stat("iron", 0, 70, 8, 45); // mg
         this.calories = new Stat("calories", 0, 4000, 1500, 2500); // calories
+
+        Food.GenerateAllFoods(); // could be moved if necessary/appropriate
     }
 
     // Update is called once per frame
