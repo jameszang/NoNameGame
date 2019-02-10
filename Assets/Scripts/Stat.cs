@@ -26,7 +26,11 @@ public class Stat
         this.absMax = absMax;
         this.healthyMin = healthyMin;
         this.healthyMax = healthyMax;
-        this.curr = absMin;
+        if (name == "health" || name == "stamina" || name == "satiation") {
+            this.curr = absMax;
+        } else {
+            this.curr = absMin;
+        }
     }
 
     public void add(float val) {
