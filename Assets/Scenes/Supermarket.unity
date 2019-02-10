@@ -361,8 +361,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947675373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 5.93, z: 45.045044}
-  m_LocalScale: {x: 1.4461017, y: 1.4461017, z: 1.4461017}
+  m_LocalPosition: {x: -1.78, y: 4.93, z: 45.045044}
+  m_LocalScale: {x: 1.5039457, y: 1.5039457, z: 1.5039457}
   m_Children: []
   m_Father: {fileID: 1720705770}
   m_RootOrder: 0
@@ -724,6 +724,8 @@ GameObject:
   - component: {fileID: 1322227401}
   - component: {fileID: 1322227400}
   - component: {fileID: 1322227402}
+  - component: {fileID: 1322227404}
+  - component: {fileID: 1322227403}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: Untagged
@@ -806,6 +808,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1322227403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322227398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c322d643dcd9043b2aa6bb5f88e0691d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2527660743358891144, guid: 3e56b4d5e3d4d4b9fb9bf1f4908130f6, type: 3}
+  numberToCreate: 20
+--- !u!114 &1322227404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322227398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 55
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 125, y: 125}
+  m_Spacing: {x: 50, y: 50}
+  m_Constraint: 1
+  m_ConstraintCount: 5
 --- !u!1 &1720705767
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +1023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2065302006
 RectTransform:
   m_ObjectHideFlags: 0
