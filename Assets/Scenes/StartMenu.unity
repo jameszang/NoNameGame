@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 1256720715}
   - component: {fileID: 1256720713}
   - component: {fileID: 1256720714}
+  - component: {fileID: 1256720717}
   m_Layer: 0
   m_Name: activities_pullout_menu
   m_TagString: Untagged
@@ -1677,6 +1678,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256720711}
   m_CullTransparentMesh: 0
+--- !u!114 &1256720717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256720711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1260166917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1704,7 @@ GameObject:
   - component: {fileID: 1260166921}
   - component: {fileID: 1260166919}
   - component: {fileID: 1260166920}
+  - component: {fileID: 1260166924}
   m_Layer: 0
   m_Name: stats_base
   m_TagString: Untagged
@@ -1836,6 +1850,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1260166924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260166917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1320357779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2246,7 @@ GameObject:
   - component: {fileID: 1904884121}
   - component: {fileID: 1904884123}
   - component: {fileID: 1904884122}
+  - component: {fileID: 1904884124}
   m_Layer: 0
   m_Name: main_stats_bar_base
   m_TagString: Untagged
@@ -2283,6 +2310,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904884120}
   m_CullTransparentMesh: 0
+--- !u!114 &1904884124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904884120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1979699265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.915039, y: -0.5250015}
+  m_AnchoredPosition: {x: 12.11, y: -0.5250015}
   m_SizeDelta: {x: 73.84, y: 195.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061555161
@@ -2528,15 +2567,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.019607844}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300002, guid: dfe7eab54ae0be842adfd249ed6a37ae, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2587,7 +2626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.35, y: -0.22}
+  m_AnchoredPosition: {x: -7.27, y: -0.22}
   m_SizeDelta: {x: 90.1, y: 195.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107697498
@@ -2656,15 +2695,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300002, guid: 3df90486d02b6a64d97241871d2ca7ae, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

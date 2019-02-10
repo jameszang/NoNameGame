@@ -1,1 +1,1 @@
-11938|Mushroom, white, exposed to ultraviolet light, raw|3.26|0.34|3.09|1.0|326|0.402|1046|2.1|0.50|22
+11938|Mushroom, white, exposed to ultraviolet light, raw|3.26|0.34|3.09|1.0|326|0.402|1046|2.1|0.50|22|1

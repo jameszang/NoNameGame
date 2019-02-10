@@ -81,4 +81,14 @@ public class Player : MonoBehaviour {
                 return calories;
         }
     }
+
+    public int GetMoney()
+    {
+        return this.money;
+    }
+
+    public void pay(int priceToPay)
+    {
+        this.money = this.money - priceToPay; 
+    }
 }

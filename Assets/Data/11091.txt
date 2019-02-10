@@ -1,1 +1,1 @@
-11091|Broccoli, cooked, boiled, drained, without salt|7.18|0.41|2.38|3.3|374|0.123|0|64.9|0.67|35
+11091|Broccoli, cooked, boiled, drained, without salt|7.18|0.41|2.38|3.3|374|0.123|0|64.9|0.67|35|2

@@ -1,1 +1,1 @@
-01081|Milk, reduced fat, fluid, 2% milkfat, protein fortified, with added vitamin A and vitamin D|5.49|1.98|3.95|0.0|384|0.194|40|1.1|0.06|56
+01081|Milk, reduced fat, fluid, 2% milkfat, protein fortified, with added vitamin A and vitamin D|5.49|1.98|3.95|0.0|384|0.194|40|1.1|0.06|56|1

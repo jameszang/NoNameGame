@@ -5,20 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class UIHider : MonoBehaviour
 {
-    UnityEngine.UI.Image img;
+    Component[] imgs;
     // Start is called before the first frame update
     void Start()
     {
-        img = GetComponent<UnityEngine.UI.Image>();
+        imgs = GetComponentsInChildren<UnityEngine.UI.Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Supermarket") {
-            img.color = new Color(255, 255, 255, 0);
+            foreach (UnityEngine.UI.Image img in imgs) {
+                Color temp = img.color;
+                temp.a = 0f;
+                img.color = temp;
+            }
         } else {
-            img.color = new Color(255, 255, 255, 255);
+            foreach (UnityEngine.UI.Image img in imgs) {
+                Color temp = img.color;
+                temp.a = 255f;
+                img.color = temp;
+            }
         }
     }
 }
