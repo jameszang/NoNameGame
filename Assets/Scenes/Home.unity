@@ -337,6 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91770528}
+  - component: {fileID: 91770532}
   - component: {fileID: 91770530}
   - component: {fileID: 91770529}
   - component: {fileID: 91770531}
@@ -443,7 +444,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1307347432}
+      - m_Target: {fileID: 91770532}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -456,6 +457,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &91770532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91770527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be53e3efec6d57c459d1f2d2aae64f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &135494409
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1004664143}
+  - component: {fileID: 1004664147}
   - component: {fileID: 1004664145}
   - component: {fileID: 1004664144}
   - component: {fileID: 1004664146}
@@ -1084,7 +1098,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1307347432}
+      - m_Target: {fileID: 1004664147}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -1097,6 +1111,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1004664147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004664142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be53e3efec6d57c459d1f2d2aae64f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147750137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a34b58c17e6d3c4f9b2e8b01e6b9973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5890450670068323595, guid: 837ea35f22460074d9122ddee3f10e45, type: 3}
+  player: {fileID: 1803496780}
   statName: calories
   minX: 0
   maxX: 150
@@ -1197,6 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292520356}
+  - component: {fileID: 1292520360}
   - component: {fileID: 1292520358}
   - component: {fileID: 1292520357}
   - component: {fileID: 1292520359}
@@ -1303,7 +1330,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1307347432}
+      - m_Target: {fileID: 1292520360}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -1316,6 +1343,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1292520360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292520355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be53e3efec6d57c459d1f2d2aae64f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1298144976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469103947}
+  - component: {fileID: 1469103951}
   - component: {fileID: 1469103949}
   - component: {fileID: 1469103948}
   - component: {fileID: 1469103950}
@@ -1695,7 +1735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1307347432}
+      - m_Target: {fileID: 1469103951}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -1708,6 +1748,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1469103951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469103946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be53e3efec6d57c459d1f2d2aae64f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1803496777
 GameObject:
   m_ObjectHideFlags: 0

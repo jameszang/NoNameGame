@@ -5,15 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Home.unity
-    guid: 2029ed48d7d887042be3eda1aace3a6f
+    guid: d08410980bb52dc4ca0e88cce2c10096
   - enabled: 1
-    path: Assets/Scenes/Gym.unity
-    guid: 2770d8ba711aa3f419068d0b240c9b79
+    path: Assets/Scenes/Hospital.unity
+    guid: 40378330c3d38944399b164ac9ea7fda
   - enabled: 1
     path: Assets/Scenes/Supermarket.unity
     guid: d5e2b28656428be43aea4b5a15cc7f30
@@ -21,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Restaurant.unity
     guid: 39e0a3f674552b0409373d7b9ed28360
   - enabled: 1
-    path: Assets/Scenes/Hospital.unity
-    guid: 40378330c3d38944399b164ac9ea7fda
+    path: Assets/Scenes/Gym.unity
+    guid: 2770d8ba711aa3f419068d0b240c9b79
   - enabled: 1
     path: Assets/Scenes/Dumpster.unity
     guid: fdf9bf564e1df5e469bf862c22d3d394
