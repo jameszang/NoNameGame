@@ -465,7 +465,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!1 &291950479
 GameObject:
@@ -1069,7 +1074,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!1 &500718311
 GameObject:
@@ -2693,7 +2703,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!95 &906774061
 Animator:
@@ -3500,7 +3515,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!95 &1104627841
 Animator:
@@ -4352,7 +4372,6 @@ GameObject:
   - component: {fileID: 1256720715}
   - component: {fileID: 1256720713}
   - component: {fileID: 1256720714}
-  - component: {fileID: 1256720717}
   m_Layer: 0
   m_Name: activities_pullout_menu
   m_TagString: Untagged
@@ -4453,18 +4472,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256720711}
   m_CullTransparentMesh: 0
---- !u!114 &1256720717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256720711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1260166917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,7 +4487,6 @@ GameObject:
   - component: {fileID: 1260166919}
   - component: {fileID: 1260166925}
   - component: {fileID: 1260166920}
-  - component: {fileID: 1260166924}
   m_Layer: 0
   m_Name: stats_base
   m_TagString: Untagged
@@ -4635,18 +4641,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1260166924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260166917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1260166925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4840,7 +4834,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!1 &1323723702
 GameObject:
@@ -6233,7 +6232,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!1 &1795001744
 GameObject:
@@ -6819,7 +6823,6 @@ GameObject:
   - component: {fileID: 1904884121}
   - component: {fileID: 1904884123}
   - component: {fileID: 1904884122}
-  - component: {fileID: 1904884124}
   m_Layer: 0
   m_Name: main_stats_bar_base
   m_TagString: Untagged
@@ -6887,18 +6890,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904884120}
   m_CullTransparentMesh: 0
---- !u!114 &1904884124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904884120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151125606b754fa46837f53670654399, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1919113002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7459,7 +7450,12 @@ MonoBehaviour:
   player: {fileID: 1416763536}
   homeAndSupermarketUI:
   - {fileID: 1568598304}
-  homeUI: []
+  - {fileID: 1799596073}
+  homeUI:
+  - {fileID: 1256720711}
+  - {fileID: 1904884120}
+  - {fileID: 1260166917}
+  - {fileID: 1504199336}
   supermarketUI: []
 --- !u!1 &2006418773
 GameObject:
