@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class ActivitiesScript : MonoBehaviour {
 
     public GameObject player;
+    public Fridge fridge;
+    public GameObject fridgeButton;
 
     public void ChangeScene(string scene) {
         if (SceneManager.GetActiveScene().name != scene) {
+            fridge.CloseFridge();
             StartCoroutine(loadYourSceneAsync(scene));
         }
     }
@@ -23,11 +26,20 @@ public class ActivitiesScript : MonoBehaviour {
         SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<Canvas>().gameObject, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<EventSystem>().gameObject, SceneManager.GetSceneByName(scene));
+
+        // Set certain parts of UI to active based on scene
         if (scene != "Home") {
             player.SetActive(false);
         } else {
             player.SetActive(true);
         }
+
+        if (scene == "Home" || scene == "Supermarket") {
+            fridgeButton.SetActive(true);
+        } else {
+            fridgeButton.SetActive(false);
+        }
+
         SceneManager.UnloadSceneAsync(currentScene);
     }
 

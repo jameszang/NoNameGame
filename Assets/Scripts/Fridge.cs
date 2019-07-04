@@ -35,4 +35,15 @@ public class Fridge : MonoBehaviour {
         }
         isInside = !isInside;
     }
+
+    public void CloseFridge() {
+        if (isInside) {
+            if (SceneManager.GetActiveScene().name == "Supermarket") {
+                animator.Play("FridgeSlideLeft");
+            } else {
+                animator.Play("FridgeSlideDown");
+            }
+            isInside = !isInside;
+        }
+    }
 }
