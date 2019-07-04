@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class ActivitiesScript : MonoBehaviour {
 
+    public GameObject player;
+
     public void ChangeScene(string scene) {
         if (SceneManager.GetActiveScene().name != scene) {
             StartCoroutine(loadYourSceneAsync(scene));
@@ -18,9 +20,14 @@ public class ActivitiesScript : MonoBehaviour {
         while (!asyncLoad.isDone) {
             yield return null;
         }
-        SceneManager.MoveGameObjectToScene(FindObjectOfType<Player>().gameObject, SceneManager.GetSceneByName(scene));
+        SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<Canvas>().gameObject, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<EventSystem>().gameObject, SceneManager.GetSceneByName(scene));
+        if (scene != "Home") {
+            player.SetActive(false);
+        } else {
+            player.SetActive(true);
+        }
         SceneManager.UnloadSceneAsync(currentScene);
     }
 
