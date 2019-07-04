@@ -11,6 +11,7 @@ public class ActivitiesScript : MonoBehaviour {
     public GameObject[] homeAndSupermarketUI;
     public GameObject[] homeUI;
     public GameObject[] supermarketUI;
+    public GameObject[] restaurantUI;
 
     public void ChangeScene(string scene) {
         if (SceneManager.GetActiveScene().name != scene) {
@@ -55,6 +56,14 @@ public class ActivitiesScript : MonoBehaviour {
 
          foreach (GameObject obj in supermarketUI) {
             if (scene == "Supermarket") {
+                obj.SetActive(true);
+            } else {
+                obj.SetActive(false);
+            }
+        }
+
+        foreach (GameObject obj in restaurantUI) {
+            if (scene == "Restaurant") {
                 obj.SetActive(true);
             } else {
                 obj.SetActive(false);
