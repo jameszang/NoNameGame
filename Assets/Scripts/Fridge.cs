@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fridge : MonoBehaviour {
     private Animator animator;
@@ -18,30 +19,19 @@ public class Fridge : MonoBehaviour {
         
     }
 
-    public void FridgeSlideRight()
-    {
-        if (isInside)
-        {
-            //FridgeSlideLeft
-            animator.Play("FridgeSlideLeft");
-        }
-        else
-        {
-            animator.Play("FridgeSlideRight");
-        }
-        isInside = !isInside;
-    }
-
-    public void FridgeSlideUp()
-    {
-        if (isInside)
-        {
-            //FridgeSlideLeft
-            animator.Play("FridgeSlideDown");
-        }
-        else
-        {
-            animator.Play("FridgeSlideUp");
+    public void OpenCloseFridge() {
+        if (SceneManager.GetActiveScene().name == "Supermarket") {
+            if (isInside) {
+                animator.Play("FridgeSlideLeft");
+            } else {
+                animator.Play("FridgeSlideRight");
+            }
+        } else {
+            if (isInside) {
+                animator.Play("FridgeSlideDown");
+            } else {
+                animator.Play("FridgeSlideUp");
+            }
         }
         isInside = !isInside;
     }
