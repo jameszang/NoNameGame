@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class ActivitiesScript : MonoBehaviour {
 
-    public GameObject player;
     public Fridge fridge;
-    public GameObject fridgeButton;
+    public GameObject player;
+    public GameObject[] homeAndSupermarketUI;
+    public GameObject[] homeUI;
+    public GameObject[] supermarketUI;
 
     public void ChangeScene(string scene) {
         if (SceneManager.GetActiveScene().name != scene) {
@@ -27,17 +29,36 @@ public class ActivitiesScript : MonoBehaviour {
         SceneManager.MoveGameObjectToScene(FindObjectOfType<Canvas>().gameObject, SceneManager.GetSceneByName(scene));
         SceneManager.MoveGameObjectToScene(FindObjectOfType<EventSystem>().gameObject, SceneManager.GetSceneByName(scene));
 
-        // Set certain parts of UI to active based on scene
+        // Set player to active if on the home scene
         if (scene != "Home") {
             player.SetActive(false);
         } else {
             player.SetActive(true);
         }
 
-        if (scene == "Home" || scene == "Supermarket") {
-            fridgeButton.SetActive(true);
-        } else {
-            fridgeButton.SetActive(false);
+        // Set certain parts of UI to active based on scene
+        foreach (GameObject obj in homeAndSupermarketUI) {
+            if (scene == "Home" || scene == "Supermarket") {
+                obj.SetActive(true);
+            } else {
+                obj.SetActive(false);
+            }
+        }
+
+        foreach (GameObject obj in homeUI) {
+            if (scene == "Home") {
+                obj.SetActive(true);
+            } else {
+                obj.SetActive(false);
+            }
+        }
+
+         foreach (GameObject obj in supermarketUI) {
+            if (scene == "Supermarket") {
+                obj.SetActive(true);
+            } else {
+                obj.SetActive(false);
+            }
         }
 
         SceneManager.UnloadSceneAsync(currentScene);
