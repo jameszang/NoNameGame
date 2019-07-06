@@ -8,6 +8,10 @@ public class BuyFood : MonoBehaviour
 
     public void purchase(GameObject purchasefood)
     {
-       // player.pay(purchasefood.getPrice());
+        // player.pay(purchasefood.getPrice());
+    }
+
+    public void test() {
+        Debug.Log("bought some food");
     }
 }

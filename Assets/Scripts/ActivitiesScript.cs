@@ -8,6 +8,7 @@ public class ActivitiesScript : MonoBehaviour {
 
     public Fridge fridge;
     public GameObject player;
+    public GameObject[] allButHomeUI;
     public GameObject[] homeAndSupermarketUI;
     public GameObject[] homeUI;
     public GameObject[] supermarketUI;
@@ -38,6 +39,14 @@ public class ActivitiesScript : MonoBehaviour {
         }
 
         // Set certain parts of UI to active based on scene
+        foreach (GameObject obj in allButHomeUI) {
+            if (scene != "Home") {
+                obj.SetActive(true);
+            } else {
+                obj.SetActive(false);
+            }
+        }
+
         foreach (GameObject obj in homeAndSupermarketUI) {
             if (scene == "Home" || scene == "Supermarket") {
                 obj.SetActive(true);

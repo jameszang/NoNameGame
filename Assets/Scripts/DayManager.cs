@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Calendar : MonoBehaviour
+public class DayManager : MonoBehaviour
 {
 
-    public static int day = 0;
+    public static int day = 1;
     private static UnityEngine.UI.Text text;
 
     private void Awake() {
@@ -13,14 +13,16 @@ public class Calendar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            day++;
-            if (day > 31) {
-                day = 1;
-            }
-            text.text = day.ToString();
+    void Update() {
+
+    }
+
+    public void NextDay() {
+        Debug.Log("next day");
+        day++;
+        if (day > 31) {
+            day = 1;
         }
+        text.text = day.ToString();
     }
 }
