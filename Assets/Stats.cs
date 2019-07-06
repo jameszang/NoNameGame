@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatsNutrition : MonoBehaviour
+public class Stats : MonoBehaviour
 {
     private Animator animator;
     private bool isInside;
