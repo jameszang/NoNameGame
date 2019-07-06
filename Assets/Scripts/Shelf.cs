@@ -7,7 +7,7 @@ public class Shelf : MonoBehaviour
 {
     public ShelfItem[] children;
 
-    public void resetStock() {
+    public void ResetStock() {
         for (int i = 0; i < children.Length; i++) {
             //sanity check
             if (i >= DayManager.foodInSupermarket.Length) {

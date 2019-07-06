@@ -12,14 +12,14 @@ public class ProductInfoDisplay : MonoBehaviour
 
     private int indexSelected;
 
-    public void resetDisplay() {
+    public void ResetDisplay() {
         foodName.text = "Food name will be displayed here";
         foodInfo.text = "Click a food to see some of it's information before buying";
         buyFoodButton.SetActive(false);
     }
 
     // the index param is the index to be used in DayManager.foodInSupermarket[index] (i.e., the position on the shelf)
-    public void getAndDisplayInfo(int index) {
+    public void GetAndDisplayInfo(int index) {
         indexSelected = index;
         Food currentFood = DayManager.foodInSupermarket[index];
 
@@ -41,6 +41,6 @@ public class ProductInfoDisplay : MonoBehaviour
     public void BuyFood() {
         shelf.BuyFood(indexSelected);
         indexSelected = -1;
-        resetDisplay();
+        ResetDisplay();
     }
 }

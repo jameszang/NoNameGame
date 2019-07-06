@@ -62,7 +62,7 @@ public class DayManager : MonoBehaviour
             idx++;
         }
 
-        shelf.resetStock();
-        productInfoDisplay.resetDisplay();
+        shelf.ResetStock();
+        productInfoDisplay.ResetDisplay();
     }
 }

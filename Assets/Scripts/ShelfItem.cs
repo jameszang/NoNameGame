@@ -9,7 +9,7 @@ public class ShelfItem : MonoBehaviour
     public ProductInfoDisplay productInfoDisplay;
 
     public void DisplayInfo() {
-        productInfoDisplay.getAndDisplayInfo(index);
+        productInfoDisplay.GetAndDisplayInfo(index);
     }
 
     public void BecomePurchased() {
