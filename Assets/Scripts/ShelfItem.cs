@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuyFood : MonoBehaviour
+public class ShelfItem : MonoBehaviour
 {
     public int index; // 0-19 inclusive, used to get the Food item from DayManager.foodInSupermarket[index]
+    public ProductInfoDisplay productInfoDisplay;
 
-    public void test() {
-        Debug.Log("bought some " + DayManager.foodInSupermarket[index].name);
+    public void DisplayInfo() {
+        productInfoDisplay.getAndDisplayInfo(index);
+    }
+
+    public void BecomePurchased() {
+        Debug.Log("Bought a " + DayManager.foodInSupermarket[index].name);
 
         // remove the sprite and make the alpha 0 (transparent)
         Image image = GetComponent<Image>();

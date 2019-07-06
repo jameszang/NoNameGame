@@ -10,6 +10,7 @@ public class DayManager : MonoBehaviour
     private static UnityEngine.UI.Text text;
 
     public Shelf shelf;
+    public ProductInfoDisplay productInfoDisplay;
 
     private void Awake() {
         text = GetComponent<UnityEngine.UI.Text>();
@@ -62,5 +63,6 @@ public class DayManager : MonoBehaviour
         }
 
         shelf.resetStock();
+        productInfoDisplay.resetDisplay();
     }
 }
