@@ -1,1 +1,1 @@
-11540|Tomato juice, canned, with salt added|3.53|0.29|0.85|0.4|480|0.078|0|70.1|0.39|17|1
+11540|Tomato juice, canned, with salt added|Vegetable|3.53|0.29|0.85|0.4|480|0.078|0|70.1|0.39|17|1

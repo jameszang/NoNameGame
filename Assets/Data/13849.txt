@@ -1,1 +1,1 @@
-13849|Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted|0.00|32.74|22.86|0.0|365|0.190|0|0.0|2.33|393|3
+13849|Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted|Meat|0.00|32.74|22.86|0.0|365|0.190|0|0.0|2.33|393|3

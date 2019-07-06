@@ -1,1 +1,1 @@
-05323|Chicken patty, frozen, uncooked|13.61|20.04|14.33|1.2|786|0.054|0|0.0|0.93|292|2
+05323|Chicken patty, frozen, uncooked|Meat|13.61|20.04|14.33|1.2|786|0.054|0|0.0|0.93|292|2

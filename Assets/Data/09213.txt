@@ -1,1 +1,1 @@
-09213|Orange juice, frozen concentrate, unsweetened, undiluted, with added calcium|33.86|0.25|2.40|1.0|1214|0.175|0|144.8|0.33|147|1
+09213|Orange juice, frozen concentrate, unsweetened, undiluted, with added calcium|Fruit|33.86|0.25|2.40|1.0|1214|0.175|0|144.8|0.33|147|1

@@ -1,1 +1,1 @@
-20321|Pasta, cooked, enriched, with added salt|30.59|0.93|5.80|1.8|182|0.136|0|0.0|1.28|157|1
+20321|Pasta, cooked, enriched, with added salt|Wheat|30.59|0.93|5.80|1.8|182|0.136|0|0.0|1.28|157|1

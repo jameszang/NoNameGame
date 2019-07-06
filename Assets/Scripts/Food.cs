@@ -36,6 +36,7 @@ public class Food
     // identifiers
     public string ndbno;
     public string name;
+    public string foodGroup; // One of "Dairy", "Meat", "Fruit", "Vegetable", "Wheat", or "Junk"
     public int price;
 
     // nutrients
@@ -57,17 +58,18 @@ public class Food
 
         this.ndbno = foodData[0];
         this.name = foodData[1];
-        float.TryParse(foodData[2], out this.carbs);
-        float.TryParse(foodData[3], out this.fat);
-        float.TryParse(foodData[4], out this.protein);
-        float.TryParse(foodData[5], out this.fiber);
-        float.TryParse(foodData[6], out this.electrolytes);
-        float.TryParse(foodData[7], out this.riboflavin);
-        float.TryParse(foodData[8], out this.vitaminD);
-        float.TryParse(foodData[9], out this.vitaminC);
-        float.TryParse(foodData[10], out this.iron);
-        float.TryParse(foodData[11], out this.calories);
-        int.TryParse(foodData[12], out this.price); 
+        this.foodGroup = foodData[2];
+        float.TryParse(foodData[3], out this.carbs);
+        float.TryParse(foodData[4], out this.fat);
+        float.TryParse(foodData[5], out this.protein);
+        float.TryParse(foodData[6], out this.fiber);
+        float.TryParse(foodData[7], out this.electrolytes);
+        float.TryParse(foodData[8], out this.riboflavin);
+        float.TryParse(foodData[9], out this.vitaminD);
+        float.TryParse(foodData[10], out this.vitaminC);
+        float.TryParse(foodData[11], out this.iron);
+        float.TryParse(foodData[12], out this.calories);
+        int.TryParse(foodData[13], out this.price); 
     }
 
     // Generates a map of ndbno:Food
@@ -82,12 +84,28 @@ public class Food
     // Returns a map of size n of random ndbno:Food
     public static Dictionary<string, Food> GenerateNFoods(int n) {
         Dictionary<string, Food> foods = new Dictionary<string, Food>();
-        System.Random rnd = new System.Random();
 
         HashSet<int> seen = new HashSet<int>();
         for (int i = 0; i < n; i++) {
-            int idx = rnd.Next(ALLNDBNOS.Length);
+            int idx = Random.Range(0, ALLNDBNOS.Length);
             if (seen.Add(idx)) {
+                foods[ALLNDBNOS[idx]] = ALLFOODS[ALLNDBNOS[idx]];
+            } else {
+                i--;
+            }
+        }
+
+        return foods;
+    }
+
+    // Returns a map of size n of random ndbno:Food with the specified foodGroup 
+    public static Dictionary<string, Food> GenerateNFoodsWithFoodGroup(int n, string foodGroup) {
+        Dictionary<string, Food> foods = new Dictionary<string, Food>();
+
+        HashSet<int> seen = new HashSet<int>();
+        for (int i = 0; i < n; i++) {
+            int idx = Random.Range(0, ALLNDBNOS.Length);
+            if (seen.Add(idx) && ALLFOODS[ALLNDBNOS[idx]].foodGroup == foodGroup) {
                 foods[ALLNDBNOS[idx]] = ALLFOODS[ALLNDBNOS[idx]];
             } else {
                 i--;

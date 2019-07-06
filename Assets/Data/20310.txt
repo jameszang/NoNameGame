@@ -1,1 +1,1 @@
-20310|Noodles, egg, cooked, enriched, with added salt|25.16|2.07|4.54|1.2|215|0.136|0|0.0|1.47|138|1
+20310|Noodles, egg, cooked, enriched, with added salt|Wheat|25.16|2.07|4.54|1.2|215|0.136|0|0.0|1.47|138|1

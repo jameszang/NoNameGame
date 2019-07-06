@@ -1,1 +1,1 @@
-01102|Milk, chocolate, fluid, commercial, whole, with added vitamin A and vitamin D|10.34|3.39|3.17|0.8|339|0.162|51|0.9|0.24|83|1
+01102|Milk, chocolate, fluid, commercial, whole, with added vitamin A and vitamin D|Dairy|10.34|3.39|3.17|0.8|339|0.162|51|0.9|0.24|83|1

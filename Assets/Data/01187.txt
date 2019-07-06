@@ -1,1 +1,1 @@
-01187|Yogurt, chocolate, nonfat milk|23.53|0.00|3.53|1.2|562|0.215|0|0.0|0.42|112|1
+01187|Yogurt, chocolate, nonfat milk|Dairy|23.53|0.00|3.53|1.2|562|0.215|0|0.0|0.42|112|1
