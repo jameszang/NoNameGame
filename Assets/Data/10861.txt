@@ -1,1 +1,1 @@
-10861|Pork, cured, bacon, cooked, microwaved|Meat|0.48|34.12|39.01|0.0|2321|0.257|0|0.0|1.14|476|2
+10861|Microwaved cured pork bacon|Meat|0.48|34.12|39.01|0.0|2321|0.257|0|0.0|1.14|476|2

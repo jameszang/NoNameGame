@@ -1,1 +1,1 @@
-09250|Peaches, frozen, sliced, sweetened|Fruit|23.98|0.13|0.63|1.8|139|0.035|0|94.2|0.37|94|2
+09250|Sweetened sliced peaches, frozen|Fruit|23.98|0.13|0.63|1.8|139|0.035|0|94.2|0.37|94|2

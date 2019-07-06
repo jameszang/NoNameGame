@@ -1,1 +1,1 @@
-09410|Apple juice, frozen concentrate, unsweetened, undiluted, with added ascorbic acid|Fruit|41.00|0.37|0.51|0|493|0.054|0|88.9|0.91|166|1
+09410|Apple juice, unsweetened, undiluted, from concentrate, with added ascorbic acid|Fruit|41.00|0.37|0.51|0|493|0.054|0|88.9|0.91|166|1

@@ -1,1 +1,1 @@
-09037|Avocados, raw, all commercial varieties|Vegetable|8.53|14.66|2.00|6.7|504|0.130|0|10.0|0.55|160|1
+09037|Avocados|Vegetable|8.53|14.66|2.00|6.7|504|0.130|0|10.0|0.55|160|1

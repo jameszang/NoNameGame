@@ -1,1 +1,1 @@
-16426|Tofu, raw, firm, prepared with calcium sulfate|Meat|2.78|8.72|17.27|2.3|934|0.102|0|0.2|2.66|144|2
+16426|Raw and firm tofu, prepared with calcium sulfate|Meat|2.78|8.72|17.27|2.3|934|0.102|0|0.2|2.66|144|2

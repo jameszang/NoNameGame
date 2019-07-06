@@ -1,1 +1,1 @@
-05673|Chicken, skin (drumsticks and thighs), cooked, braised|Meat|0.00|42.76|14.61|0.0|245|0.055|4|0.0|1.00|443|1
+05673|Braised chicken drumsticks and thighs, skin on|Meat|0.00|42.76|14.61|0.0|245|0.055|4|0.0|1.00|443|1

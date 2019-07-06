@@ -1,1 +1,1 @@
-11439|Sauerkraut, canned, solids and liquids|Vegetable|4.28|0.14|0.91|2.9|861|0.022|0|14.7|1.47|19|1
+11439|Canned sauerkraut|Vegetable|4.28|0.14|0.91|2.9|861|0.022|0|14.7|1.47|19|1

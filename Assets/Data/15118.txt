@@ -1,1 +1,1 @@
-15118|Fish, tuna, fresh, bluefin, cooked, dry heat|Meat|0.00|6.28|29.91|0.0|383|0.306|0|0.0|1.31|18|2
+15118|Cooked fresh bluefin tuna|Meat|0.00|6.28|29.91|0.0|383|0.306|0|0.0|1.31|18|2

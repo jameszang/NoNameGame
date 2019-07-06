@@ -1,1 +1,1 @@
-05028|Chicken, liver, all classes, cooked, simmered|Meat|0.87|6.51|24.46|0.0|350|1.993|0|27.9|11.63|167|2
+05028|Simmered chicken liver|Meat|0.87|6.51|24.46|0.0|350|1.993|0|27.9|11.63|167|2

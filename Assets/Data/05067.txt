@@ -1,1 +1,1 @@
-05067|Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, batter|Meat|8.28|15.75|21.95|0.3|472|0.215|0|0.0|1.35|268|2
+05067|Fried battered chicken drumsticks with skin on|Meat|8.28|15.75|21.95|0.3|472|0.215|0|0.0|1.35|268|2

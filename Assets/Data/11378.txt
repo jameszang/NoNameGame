@@ -1,1 +1,1 @@
-11378|Potatoes, mashed, dehydrated, flakes without milk, dry form|Vegetable|81.17|0.41|8.34|6.6|1202|0.110|0|81.0|1.21|354|1
+11378|Dehydrated mashed potatoes|Vegetable|81.17|0.41|8.34|6.6|1202|0.110|0|81.0|1.21|354|1

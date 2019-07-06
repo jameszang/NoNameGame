@@ -1,1 +1,1 @@
-23634|Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, cooked, braised|Meat|0.00|5.21|33.18|0.0|345|0.204|0|0.0|2.81|189|3
+23634|Braised beef brisket, trimmed to 1/8" fat|Meat|0.00|5.21|33.18|0.0|345|0.204|0|0.0|2.81|189|3

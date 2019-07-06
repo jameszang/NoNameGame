@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class BuyFood : MonoBehaviour
 {
+    public int index; // 0-19 inclusive, used to get the Food item from DayManager.foodInSupermarket[index]
+
     public void test() {
-        Debug.Log("bought some food");
+        Debug.Log("bought some " + DayManager.foodInSupermarket[index].name);
 
         // remove the sprite and make the alpha 0 (transparent)
         Image image = GetComponent<Image>();

@@ -1,1 +1,1 @@
-15220|Fish, tuna, skipjack, fresh, cooked, dry heat|Meat|0.00|1.29|28.21|0.0|606|0.122|0|1.0|1.60|132|2
+15220|Cooked skipjack tuna|Meat|0.00|1.29|28.21|0.0|606|0.122|0|1.0|1.60|132|2

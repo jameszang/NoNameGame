@@ -1,1 +1,1 @@
-11311|Peas, green, canned, drained solids, rinsed in tap water|Vegetable|11.82|0.95|4.33|0|360|0.040|0|9.3|1.09|71|1
+11311|Canned green peas, rinsed in tap water|Vegetable|11.82|0.95|4.33|0|360|0.040|0|9.3|1.09|71|1

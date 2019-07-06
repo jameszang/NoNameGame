@@ -1,1 +1,1 @@
-28290|Cookie, with peanut butter filling, chocolate-coated|Junk|52.90|35.30|8.10|3.5|623|0.090|0|0.0|2.10|562|1
+28290|Chocolate-coated cookie with peanut butter filling|Junk|52.90|35.30|8.10|3.5|623|0.090|0|0.0|2.10|562|1

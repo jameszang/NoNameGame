@@ -1,1 +1,1 @@
-11364|Potatoes, baked, skin, without salt|Vegetable|46.06|0.10|4.29|7.9|628|0.106|0|13.5|7.04|198|1
+11364|Baked potatoes, skin-on, without salt|Vegetable|46.06|0.10|4.29|7.9|628|0.106|0|13.5|7.04|198|1
