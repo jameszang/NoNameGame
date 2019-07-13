@@ -17,7 +17,7 @@ public class Handle : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        Stat stat = player.getStatByName(statName);
+        Stat stat = player.GetStatByName(statName);
         float newXPos = stat.getCurr() * ((minX + maxX) / (stat.getAbsMin() + stat.getAbsMax()));
         rectTransform.anchoredPosition = new Vector2(newXPos, rectTransform.anchoredPosition.y);
     }

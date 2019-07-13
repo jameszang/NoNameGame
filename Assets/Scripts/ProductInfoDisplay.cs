@@ -25,9 +25,9 @@ public class ProductInfoDisplay : MonoBehaviour
 
         foodName.text = currentFood.name;
         foodInfo.text = 
-            "Carbohydrates: " + currentFood.carbs + "g\n" +
-            "Fat: " + currentFood.fat + "g\n" +
-            "Protein: " + currentFood.protein + "g\n" +
+            "Carbohydrates: " + currentFood.carbs + "% daily calorie intake\n" +
+            "Fat: " + currentFood.fat + "% daily calorie intake\n" +
+            "Protein: " + currentFood.protein + "% daily calorie intake\n" +
             "Fiber: " + currentFood.fiber + "g\n" + 
             "Electrolytes: " + currentFood.electrolytes + "mg\n" +
             "Riboflavin: " + currentFood.riboflavin + "mg\n" + 

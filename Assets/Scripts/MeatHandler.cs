@@ -16,11 +16,11 @@ public class MeatHandler : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Supermarket") {
             // add to fridge
             Debug.Log("added to fridge");
-            player.pay(Food.ALLFOODS[ndbno].price);
-            player.addToInventory(ndbno);
+            player.Pay(Food.ALLFOODS[ndbno].price);
+            player.AddToInventory(ndbno);
         } else {
             Debug.Log("eaten");
-            player.takeFromInventory(ndbno);
+            //player.TakeFromInventory(ndbno);
             GameObject.Destroy(gameObject);
         }
     }

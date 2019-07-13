@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour 
+{
+    // The 9 InventoryItem objects that are children of Fridge
+    public InventoryItem[] inventoryItems;
 
     // instance variables
     public int spd;
@@ -13,40 +17,61 @@ public class Player : MonoBehaviour {
     private Stat stamina;
     private int money;
 
-    //inventory is a map of ndbno:num of that food
-    private Dictionary<string, int> Inventory;
-    private int InventoryLimit = 6;
+    //inventory is an array of ndbnos
+    private string[] inventory;
+    private readonly int inventoryLimit = 9;
     private int numItemsInInventory = 0;
 
-    public void addToInventory(string ndbno)
+    public bool AddToInventory(string ndbno)
     {
-        if (numItemsInInventory < InventoryLimit)
-        {
-            if (Inventory.ContainsKey(ndbno)) {
-                Inventory[ndbno]++;
-            } else {
-                Inventory[ndbno] = 1;
+        if (numItemsInInventory < inventoryLimit) {
+            // find first free space in inventory
+            int firstFreeIndex = -1;
+            for (int i = 0; i < inventoryLimit; i++) {
+                if (inventory[i] == "") {
+                    firstFreeIndex = i;
+                    break;
+                }
             }
+            inventory[firstFreeIndex] = ndbno;
             numItemsInInventory++;
-        } 
+
+            Image image = inventoryItems[firstFreeIndex].gameObject.GetComponent<Image>();
+            image.sprite = Resources.Load<Sprite>("Sprites/FoodIcons/" + Food.ALLFOODS[ndbno].foodGroup.ToLower());
+
+            Color tempColor = image.color;
+            tempColor.a = 1f;
+            image.color = tempColor;
+
+            // make the button clickable
+            Button buyButton = inventoryItems[firstFreeIndex].gameObject.GetComponent<Button>();
+            buyButton.interactable = true;
+            return true;
+        } else {
+            return false;
+        }
         
     }
 
-    public void takeFromInventory(string ndbno)
+    public bool TakeFromInventory(int index)
     {
-        if (satiation.getCurr() >= satiation.getAbsMax())
-        {
-            return;
+        if (satiation.getCurr() >= satiation.getAbsMax()) {
+            return false;
         }
-        if (Inventory.ContainsKey(ndbno) && Inventory[ndbno] > 0)
-        {
-            Food food = Food.ALLFOODS[ndbno];
-            eat(food);
-            Inventory[ndbno]--;
+
+        string ndbnoToConsume = inventory[index];
+        if (ndbnoToConsume == "") {
+            return false;
         }
+
+        Food food = Food.ALLFOODS[ndbnoToConsume];
+        Eat(food);
+        inventory[index] = "";
+        numItemsInInventory--;
+        return true;
     }
 
-    private void eat(Food food)
+    private void Eat(Food food)
     {
         carbs.add(food.carbs);
         fat.add(food.fat);
@@ -90,25 +115,22 @@ public class Player : MonoBehaviour {
         this.iron = new Stat("iron", 0, 70, 8, 45); // mg
         this.calories = new Stat("calories", 0, 4000, 1500, 2500); // calories
 
-        this.Inventory = new Dictionary<string, int>();
-
-        Food.GenerateAllFoods(); // could be moved if necessary/appropriate
+        this.inventory = new string[inventoryLimit];
+        for (int i = 0; i < inventoryLimit; i++) {
+            this.inventory[i] = "";
+        }
     }
 
     private void Start() {
-        addToInventory("13849");
-        addToInventory("13849");
-        addToInventory("13849");
-        addToInventory("13849");
-        addToInventory("13849");
+
     }
 
     // Update is called once per frame
     void Update() {
-        //this.calories.add(5);
+
     }
 
-    public Stat getStatByName(string name) {
+    public Stat GetStatByName(string name) {
         switch (name) {
             case "health":
                 return health;
@@ -144,7 +166,7 @@ public class Player : MonoBehaviour {
         return this.money;
     }
 
-    public void pay(int priceToPay)
+    public void Pay(int priceToPay)
     {
         this.money = this.money - priceToPay; 
     }

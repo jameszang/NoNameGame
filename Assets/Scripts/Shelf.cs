@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Shelf : MonoBehaviour
 {
     public ShelfItem[] children;
+    public Player player;
 
     public void ResetStock() {
         for (int i = 0; i < children.Length; i++) {
@@ -29,6 +30,12 @@ public class Shelf : MonoBehaviour
     }
 
     public void BuyFood(int index) {
-        children[index].BecomePurchased();
+        bool successfulBuy = player.AddToInventory(DayManager.foodInSupermarket[index].ndbno);
+        if (successfulBuy) {
+            children[index].BecomePurchased();
+        } else {
+            // TODO: Add actual in-game notification
+            Debug.Log("Inventory full!");
+        }
     }
 }
